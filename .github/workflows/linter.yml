@@ -8,6 +8,8 @@ jobs:
         steps:
             - name: Check out repository code
               uses: actions/checkout@v3
+            - name: Install dependencies
+              run: npm install
             - name: Run eslint check
               run: npm run lint
     
